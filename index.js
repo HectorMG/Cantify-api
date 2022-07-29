@@ -22,6 +22,7 @@ var port = process.env.PORT || 3681;
 ////////////////////////////////////////////////////////////////////////
 
 require('./app/routes/song.routes.js')(app);
+require('./app/routes/user.routes.js')(app);
 
 app.get("/", (req, res) => {
   res.json({
