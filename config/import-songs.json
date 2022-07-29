@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Un Verano En Nueva York",
+        "artist": "El Gran Combo de Puerto Rico",
+        "lyrics": "Si te quieres divertir \nCon encanto y con primor \nSólo tienes que vivir \nUn verano en Nueva york",
+        "releaseDate": "2018-04-14"
+    },
+    {
+        "name": "Ay Vamos",
+        "artist": "J Balvin",
+        "lyrics": "Cuando no la llamo \nSiempre me hace reclamos \nDiscutimos peleamos \nPero llego a casa en la noche \nLa molesto y arreglamos",
+        "releaseDate": "2012-05-19"
+    },
+    {
+        "name": "Welcome To The Jungle",
+        "artist": "Guns And Roses",
+        "lyrics": "Welcome to the jungle \nWe got fun and games \nWe got everything you want \nHoney, we know the names",
+        "releaseDate": "2002-07-14"
+    },
+    {
+        "name": "La Guitarra",
+        "artist": "Los Auténticos Decadentes",
+        "lyrics": "Tuve un problema de difícil solución en una \nÉpoca difícil de mi vida \nEstaba entre la espada y la pared \nY aguantando la opinión de mi familia",
+        "releaseDate": "2011-09-07"
+    },
+    {
+        "name": "Al Taller Del Maestro",
+        "artist": "Alex Campos",
+        "lyrics": "Ay, cómo me duele estar despierto \nY no poder cantar \n¿Cómo expresarte sin palabras? \nMe muero si no estás",
+        "releaseDate": "2010-10-10"
+    },
+    {
+        "name": "Las Locuras Mías",
+        "artist": "Silvestre Dangond",
+        "lyrics": "Por Dios que no quisiera sentir esta ilusión \nTal vez podría cometer un grave error \nPorque tú eres prohibida para mí \nPero yo no pude controlar al corazón \nY apenas que te vio de ti se enamoró \nY a cada instante me pregunta por ti",
+        "releaseDate": "2020-07-10"
+    },
+    {
+        "name": "Oiga, Mire, Vea",
+        "artist": "Orquesta Guayacan",
+        "lyrics": "Si huele a caña tabaco y brea \nUste esta en cali ay mire vea! \nSi las mujeres son lindas y hermosas \nAquí no hay fea para que vea",
+        "releaseDate": "2012-12-05"
+    }
+]
