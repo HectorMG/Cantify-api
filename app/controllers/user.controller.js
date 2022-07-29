@@ -15,7 +15,7 @@ exports.validate = (req, res) => {
             if (user.length > 0) {
                 res.status(200).send({ message: "Usuario autenticado correctamente" });
             } else {
-                res.status(200).send({ message: "Usuario incorrecto, por favor verificar credenciales" });
+                res.status(404).send({ message: "Usuario incorrecto, por favor verificar credenciales" });
             }
         }).catch(err => {
             res.status(500).send({
