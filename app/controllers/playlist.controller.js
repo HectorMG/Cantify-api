@@ -41,24 +41,27 @@ exports.findAll = (req, res) => {
 }
 
 exports.findOne = (req, res) => {
-    Playlist.findById(req.params.id).then(playlist => {
-        if (!playlist) {
-            return res.status(404).send({
-                message: "Playlist not found with id:" + req.params.id
+    Playlist.findById(req.params.id)
+            .populate("songs")
+            .then(playlist => {
+                if (!playlist) {
+                    return res.status(404).send({
+                    message: "Playlist not found with id:" + req.params.id
+                });
+                }
+                res.status(200).send(playlist);
+            })
+            .catch(err => {
+                if (err.kind === 'ObjectId') {
+                    return res.status(404).send({
+                        message: "Playlist not found with id:" + req.params.id
+                    });
+                }
+                return res.status(500).send({
+                    message: "Something wrong ocurred while retrieving the record with id:"
+                        + req.params.id
+                });
             });
-        }
-        res.status(200).send(playlist);
-    }).catch(err => {
-        if (err.kind === 'ObjectId') {
-            return res.status(404).send({
-                message: "Playlist not found with id:" + req.params.id
-            });
-        }
-        return res.status(500).send({
-            message: "Something wrong ocurred while retrieving the record with id:"
-                + req.params.id
-        });
-    });
 
 }
 
