@@ -10,5 +10,7 @@ module.exports = (app) => {
      // Get a single playlist by id
      app.get('/api/playlist/:id',playlist.findOne);
 
+     app.put('/api/playlist/:id',playlist.update);
+
 
 }
