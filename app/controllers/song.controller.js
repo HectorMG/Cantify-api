@@ -2,6 +2,7 @@ const Song = require('../models/song.model.js');
 
 // Retrieve and list all Songs
 exports.findAll = (req, res) => {
+    console.log(req.user);
     Song.find()
         .then(songs => {
             res.status(200).send(songs);
