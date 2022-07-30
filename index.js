@@ -21,6 +21,7 @@ var port = process.env.PORT || 3681;
 // Define the routes [4]
 ////////////////////////////////////////////////////////////////////////
 
+require('./app/routes/playlist.routes.js')(app);
 require('./app/routes/song.routes.js')(app);
 require('./app/routes/user.routes.js')(app);
 
