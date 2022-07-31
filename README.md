@@ -52,3 +52,16 @@ En el archivo **import-usersLogin.json** se encuentran configurados dos usuarios
 | ------------- | ------------- |
 | ingeniero  | hola123  |
 | pruebas  | hola889900#  |
+
+# Tabla de EndPoints
+
+| Descripción| Verbo HTTP | URI | 
+|---|---|---|
+| Listar las todas las canciones | GET | /api/songs | 
+| Ver letra e información de una canción | GET | /api/songs/:id |
+| Crear lista de reproducción | POST | /api/playlist |
+| Agregar canción a lista de reproducción | PUT | /api/playlist/:id?action=add |
+| Eliminar canción de una lista de reproducción | PUT | /api/playlist/:id?action=delete |
+| Listar las lista de reproducción | GET | /api/playlist |
+| Ver información de una lista de reproducción | GET | /api/playlist/:id |
+| Realizar login | POST | /api/login |
